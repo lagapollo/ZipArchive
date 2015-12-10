@@ -43,6 +43,7 @@
 - (instancetype)initWithPath:(NSString *)path;
 @property (NS_NONATOMIC_IOSONLY, readonly) BOOL open;
 - (BOOL)writeFile:(NSString *)path;
+- (BOOL)writeFolderAtPath:(NSString *)path withFolderName:(NSString *)folderName;
 - (BOOL)writeFileAtPath:(NSString *)path withFileName:(NSString *)fileName;
 - (BOOL)writeData:(NSData *)data filename:(NSString *)filename;
 @property (NS_NONATOMIC_IOSONLY, readonly) BOOL close;
